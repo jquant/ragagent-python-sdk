@@ -5,7 +5,7 @@ description = "Ragagent MCP Gateway"
 authors = ["JAI Team <dev@getjai.com>"]
 license = "NoLicense"
 readme = "README.md"
-repository = "https://github.com/getjai/ragagent-python-sdk"
+repository = "https://github.com/jquant/ragagent-python-sdk"
 keywords = ["OpenAPI", "OpenAPI-Generator", "Ragagent MCP Gateway"]
 include = ["ragagent_client/py.typed"]
 
