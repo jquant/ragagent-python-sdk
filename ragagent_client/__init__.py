@@ -43,7 +43,7 @@ from ragagent_client.exceptions import ApiException
 
 # import models into sdk package
 from ragagent_client.models.abandoned_signup_data import AbandonedSignupData
-from ragagent_client.models.api_response import ApiResponse
+from ragagent_client.models.api_response import ApiResponse as ApiResponseModel
 from ragagent_client.models.error_signup_data import ErrorSignupData
 from ragagent_client.models.http_validation_error import HTTPValidationError
 from ragagent_client.models.ragagent_models_flow_webhook_encrypted_flow_data import (

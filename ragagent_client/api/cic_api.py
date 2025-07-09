@@ -11,14 +11,11 @@
     Do not edit the class manually.
 """  # noqa: E501
 
-import warnings
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
-from pydantic import Field, StrictBytes, StrictInt, StrictStr
-from typing import Any, Dict, Optional, Tuple, Union
-from typing_extensions import Annotated
+from pydantic import StrictBytes
 
 from ragagent_client.api_client import ApiClient, RequestSerialized
 from ragagent_client.api_response import ApiResponse
