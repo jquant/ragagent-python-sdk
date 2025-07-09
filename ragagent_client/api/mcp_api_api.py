@@ -15,7 +15,8 @@ from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
-from ragagent_client.models.api_response import ApiResponse
+from ragagent_client.api_response import ApiResponse
+from ragagent_client.models.api_response import ApiResponse as ApiResponseModel
 from ragagent_client.models.tool_execution_request import ToolExecutionRequest
 
 from ragagent_client.api_client import ApiClient, RequestSerialized
@@ -378,7 +379,7 @@ class McpApiApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ApiResponse]:
+    ) -> ApiResponse[ApiResponseModel]:
         """Get Openapi Spec
 
         Get OpenAPI specification  Returns the OpenAPI specification for the REST API endpoints.
