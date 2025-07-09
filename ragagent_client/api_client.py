@@ -273,7 +273,13 @@ class ApiClient:
         """
 
         msg = "RESTResponse.read() must be called before passing it to response_deserialize()"
-        assert response_data.data is not None, msg
+        if response_data.data is None:
+            raise ValueError(msg)
+
+        if response_types_map is None:
+            raise ValueError(
+                "response_types_map is required to deserialize the response"
+            )
 
         response_type = response_types_map.get(str(response_data.status), None)
         if (
@@ -312,7 +318,7 @@ class ApiClient:
                     data=return_data,
                 )
 
-        return ApiResponse(
+        return ApiResponse[ApiResponseT](
             status_code=response_data.status,
             data=return_data,
             headers=response_data.getheaders(),
