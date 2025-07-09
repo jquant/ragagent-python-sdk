@@ -10,7 +10,6 @@ from ragagent_client.api.mcp_api_api import McpApiApi
 from ragagent_client.api.root_api import RootApi
 from ragagent_client.api.ui_events_api import UiEventsApi
 from ragagent_client.api.waba_signup_api import WabaSignupApi
-from ragagent_client.api.whatsapp0_api import WhatsappApi as Whatsapp0Api
+from ragagent_client.api.whatsapp_api import WhatsappApi as Whatsapp0Api
 from ragagent_client.api.whatsapp_flow_api import WhatsappFlowApi
 from ragagent_client.api.whatsapp_flows_api import WhatsappFlowsApi
-
